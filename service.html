@@ -230,10 +230,34 @@
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="1000"
           >
-          <!-- Trigger Image -->
-<div>
-  <img src="assets/img-15.jpg" width="100%" alt="" data-bs-toggle="modal" data-bs-target="#imageModal" style="cursor: pointer;" />
-</div>           
+       
+<!-- 🔁 Gallery 1 -->
+<div class="image-gallery" data-gallery="1">
+  <div class="row align-items-center">
+    <!-- Preview Image -->
+    <div class="col-9">
+      <img class="preview-main-img w-100 big-img" src="assets/img-15.jpg"
+           data-bs-toggle="modal" data-bs-target="#imageModal-1"
+           style="cursor: pointer;" />
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="col-3">
+      <div class="thumbs d-flex flex-column gap-2">
+        <img src="assets/img-15.jpg" class="thumb-img active" />
+        <img src="assets/img-14.webp" class="thumb-img" />
+        <img src="assets/img-13.webp" class="thumb-img" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+          
           </div>
         </div>
         <div class="row align-items-center g-4">
@@ -243,9 +267,26 @@
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="1000"
           >
- <div>
-              <img src="assets/img-1.webp" width="100%" alt="" />
-            </div>
+ <!-- 🔁 Gallery 2 -->
+<div class="image-gallery" data-gallery="2">
+  <div class="row align-items-center">
+    <!-- Preview Image -->
+    <div class="col-9">
+      <img class="preview-main-img w-100 big-img" src="assets/img-1.webp"
+           data-bs-toggle="modal" data-bs-target="#imageModal-2"
+           style="cursor: pointer;" />
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="col-3">
+      <div class="thumbs d-flex flex-column gap-2">
+        <img src="assets/img-2.webp" class="thumb-img active" />
+        <img src="assets/img-3.webp" class="thumb-img" />
+        <img src="assets/img-4.webp" class="thumb-img" />
+      </div>
+    </div>
+  </div>
+</div>
 
           </div>
           <div
@@ -901,35 +942,152 @@
     </section>
     <!-- -----Our Service-Section-End------ -->
      <!-- Modal -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+<!-- 🔁 Modal for Gallery 1 -->
+<div class="modal fade" id="imageModal-1" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content p-2">
       <div class="modal-header p-0">
-        <h5 class="modal-title" id="imageModalLabel">Image Gallery</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title">Gallery 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
-
-        <!-- Layout 2 -->
-        <div class="row align-items-center ">
-          <!-- Main Image -->
-          <div class="col-9">
-            <img id="main-img-2" src="assets/img-15.jpg" class="w-100 big-img" />
+        <div class="row g-4 align-items-center">
+           <div class="col-lg-6 col-9">
+            <img class="modal-main-img w-100 big-img" src="assets/img-15.jpg" />
           </div>
-          <!-- Thumbnails -->
-          <div class=" col-3">
+           <div class="col-3 col-lg-2">
             <div class="thumbs d-flex flex-column gap-2">
-              <img src="assets/img-15.jpg" class="thumb-img active" onclick="changeImage(this, 'main-img-2')" />
-              <img src="assets/img-14.webp" class="thumb-img" onclick="changeImage(this, 'main-img-2')" />
-              <img src="assets/img-13.webp" class="thumb-img" onclick="changeImage(this, 'main-img-2')" />
+              <img src="assets/img-15.jpg" class="thumb-img active" />
+              <img src="assets/img-14.webp" class="thumb-img" />
+              <img src="assets/img-13.webp" class="thumb-img" />
             </div>
           </div>
-        </div>
+            <div class="col-lg-4">
+  <form>
+            <div class="mb-4 text-dark">
+              <h3 class="fw-bold">Get in Touch with Us</h3>
+              <p class="">
+                Looking for a custom quote or have a question? Fill out the form
+                below and our experts will get back to you soon. We're ready to
+                support your vehicle body needs.
+              </p>
+            </div>
 
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="col-md-6 mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Phone Number"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Subject" />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark px-4 fw-semibold">
+              Submit
+            </button>
+          </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- 🔁 Modal for Gallery 2 -->
+<div class="modal fade" id="imageModal-2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content p-2">
+      <div class="modal-header p-0">
+        <h5 class="modal-title">Gallery 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 col-9">
+            <img class="modal-main-img w-100 big-img" src="assets/img-1.webp" />
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="thumbs d-flex flex-column gap-2">
+              <img src="assets/img-2.webp" class="thumb-img active" />
+              <img src="assets/img-3.webp" class="thumb-img" />
+              <img src="assets/img-4.webp" class="thumb-img" />
+            </div>
+          </div>
+           <div class="col-lg-4">
+  <form>
+            <div class="mb-4 text-dark">
+              <h3 class="fw-bold">Get in Touch with Us</h3>
+              <p class="">
+                Looking for a custom quote or have a question? Fill out the form
+                below and our experts will get back to you soon. We're ready to
+                support your vehicle body needs.
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="col-md-6 mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Phone Number"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Subject" />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark px-4 fw-semibold">
+              Submit
+            </button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
     <!-- -----Our Contact-Section-Start------ -->
     <section class="container-fluid p-5">
       <div class="row">

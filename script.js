@@ -156,15 +156,52 @@ listItems.forEach(item => {
 
 
  //service page 
-  function changeImage(thumbnail, mainId) {
-    // Remove 'active' class from all thumbnails
-    let allThumbs = thumbnail.parentElement.querySelectorAll('.thumb-img');
-    allThumbs.forEach(img => img.classList.remove('active'));
+ document.querySelectorAll('.image-gallery').forEach(gallery => {
+    const galleryId = gallery.getAttribute('data-gallery');
+    const previewImg = gallery.querySelector('.preview-main-img');
+    const previewThumbs = gallery.querySelectorAll('.thumb-img');
 
-    // Add 'active' class to clicked thumbnail
-    thumbnail.classList.add('active');
+    const modal = document.getElementById(`imageModal-${galleryId}`);
+    const modalImg = modal.querySelector('.modal-main-img');
+    const modalThumbs = modal.querySelectorAll('.thumb-img');
 
-    // Change the main image
-    document.getElementById(mainId).src = thumbnail.src;
-  }
+    // 1️⃣ Click on preview thumbnail → update preview + modal image + open modal
+    previewThumbs.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        const src = thumb.src;
+
+        // Update preview image
+        previewImg.src = src;
+
+        // Active class in preview
+        previewThumbs.forEach(img => img.classList.remove('active'));
+        thumb.classList.add('active');
+
+        // Update modal image
+        modalImg.src = src;
+
+        // Active class in modal thumbs
+        modalThumbs.forEach(img => {
+          img.classList.remove('active');
+          if (img.src === src) img.classList.add('active');
+        });
+
+        // Show modal
+        const bsModal = new bootstrap.Modal(modal);
+        bsModal.show();
+      });
+    });
+
+    // 2️⃣ Click on modal thumbnail → update modal main image
+    modalThumbs.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        const src = thumb.src;
+        modalImg.src = src;
+
+        // Update active class
+        modalThumbs.forEach(img => img.classList.remove('active'));
+        thumb.classList.add('active');
+      });
+    });
+  });
 
