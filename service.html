@@ -230,37 +230,10 @@
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="1000"
           >
-            <!-- Layout 2 -->
-            <div class="row align-items-start">
-              <!-- Main Image -->
-              <div class="col-lg-10 col-9">
-                <img
-                  id="main-img-2"
-                  src="assets/img-15.jpg"
-                  class="w-100 big-img"
-                />
-              </div>
-              <!-- Thumbnails -->
-              <div class="col-lg-2 col-3">
-                <div class="thumbs d-flex flex-column gap-2">
-                  <img
-                    src="assets/img-15.jpg"
-                    class="thumb-img active"
-                    onclick="changeImage(this, 'main-img-2')"
-                  />
-                  <img
-                    src="assets/img-14.webp"
-                    class="thumb-img"
-                    onclick="changeImage(this, 'main-img-2')"
-                  />
-                  <img
-                    src="assets/img-13.webp"
-                    class="thumb-img"
-                    onclick="changeImage(this, 'main-img-2')"
-                  />
-                </div>
-              </div>
-            </div>
+          <!-- Trigger Image -->
+<div>
+  <img src="assets/img-15.jpg" width="100%" alt="" data-bs-toggle="modal" data-bs-target="#imageModal" style="cursor: pointer;" />
+</div>           
           </div>
         </div>
         <div class="row align-items-center g-4">
@@ -270,21 +243,9 @@
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="1000"
           >
-           <!-- Layout 1 -->
-<div class="row align-items-start mb-5">
-  <!-- Thumbnails -->
- <div class="col-lg-2 col-3">
-    <div class="thumbs d-flex flex-column gap-2">
-      <img src="assets/img-1.webp" class="thumb-img active" onclick="changeImage(this, 'main-img-1')" />
-      <img src="assets/img-2.webp" class="thumb-img" onclick="changeImage(this, 'main-img-1')" />
-      <img src="assets/img-3.webp" class="thumb-img" onclick="changeImage(this, 'main-img-1')" />
-    </div>
-  </div>
-  <!-- Main Image -->
-  <div class="col-lg-10 col-9">
-    <img id="main-img-1" src="assets/img-1.webp" class="w-100 big-img" />
-  </div>
-</div>
+ <div>
+              <img src="assets/img-1.webp" width="100%" alt="" />
+            </div>
 
           </div>
           <div
@@ -939,6 +900,36 @@
       </div>
     </section>
     <!-- -----Our Service-Section-End------ -->
+     <!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content p-2">
+      <div class="modal-header p-0">
+        <h5 class="modal-title" id="imageModalLabel">Image Gallery</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Layout 2 -->
+        <div class="row align-items-center ">
+          <!-- Main Image -->
+          <div class="col-9">
+            <img id="main-img-2" src="assets/img-15.jpg" class="w-100 big-img" />
+          </div>
+          <!-- Thumbnails -->
+          <div class=" col-3">
+            <div class="thumbs d-flex flex-column gap-2">
+              <img src="assets/img-15.jpg" class="thumb-img active" onclick="changeImage(this, 'main-img-2')" />
+              <img src="assets/img-14.webp" class="thumb-img" onclick="changeImage(this, 'main-img-2')" />
+              <img src="assets/img-13.webp" class="thumb-img" onclick="changeImage(this, 'main-img-2')" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
     <!-- -----Our Contact-Section-Start------ -->
     <section class="container-fluid p-5">
       <div class="row">

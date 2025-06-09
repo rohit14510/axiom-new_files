@@ -156,10 +156,15 @@ listItems.forEach(item => {
 
 
  //service page 
-  function changeImage(thumb, mainImageId) {
-    const allThumbs = thumb.parentElement.querySelectorAll('.thumb-img');
+  function changeImage(thumbnail, mainId) {
+    // Remove 'active' class from all thumbnails
+    let allThumbs = thumbnail.parentElement.querySelectorAll('.thumb-img');
     allThumbs.forEach(img => img.classList.remove('active'));
 
-    thumb.classList.add('active');
-    document.getElementById(mainImageId).src = thumb.src;
+    // Add 'active' class to clicked thumbnail
+    thumbnail.classList.add('active');
+
+    // Change the main image
+    document.getElementById(mainId).src = thumbnail.src;
   }
+

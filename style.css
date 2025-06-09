@@ -797,17 +797,21 @@ header .sticky .logo-img img {
     }
         /* //gallery Page End// */
          /* //Service Page Start// */
-          .thumb-img {
+  .thumb-img {
     width: 100%;
-    cursor: pointer;
     border: 2px solid transparent;
-    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transition: 0.3s;
   }
 
   .thumb-img.active {
-    border: 2px solid #007bff;
+    border-color: #007bff;
   }
 
+  .big-img {
+    max-height: 80vh;
+    object-fit: contain;
+  }
 
 
 
