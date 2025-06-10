@@ -247,7 +247,7 @@ header .navbar-brand {
 }
 
 header .book img {
-  height: 50px;
+  height: 74px;
   position: relative;
   z-index: 3;
 }
@@ -257,6 +257,7 @@ header .book img {
   overflow-x: clip;
   transition: 1s;
   background-color: #fff;
+  min-height: 80px;
 }
 
 .menu .navbar-brand {
@@ -825,7 +826,7 @@ video {
 }
 
 .footer-logo img {
-  height: 40px;
+  height: 80px;
   background-color: #fff;
 }
 
@@ -1045,7 +1046,7 @@ video {
   }
 
   .menu .navbar-brand img {
-    height: 40px;
+    height: 50px;
   }
   .menu .navbar-light .navbar-toggler-icon i {
     font-size: 25px;
