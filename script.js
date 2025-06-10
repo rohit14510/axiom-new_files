@@ -96,7 +96,7 @@
   const contentData = [
   {
     title: "AC Sleeper & Passenger Buses",
-    video: "assets/FurnishingCoaches.mp4",
+    video: "assets/img-3.webp",
     desc: `Our AC Sleeper Buses are built for comfort, reliability, and long-distance travel. Designed with spacious interiors, high-grade insulation, and ergonomic seating or sleeper arrangements, they provide passengers with a safe and luxurious travel experience. We customize each build based on operator needs, ensuring optimal air conditioning, storage space, and aesthetic appeal, perfect for private operators and state transport services.`
   },
   {
@@ -106,12 +106,12 @@
   },
   {
     title: "Container Bodies",
-    video: "assets/Training-Simulator.jpg", // This is an image
+    video: "assets/img-11.jpeg", // This is an image
     desc: `Our container bodies are ideal for transporting goods over long distances with enhanced security and weather protection. Built to national and international logistics standards, these containers are perfect for fleet operators, warehousing solutions, and last-mile delivery companies. We offer customizable sizes, locking mechanisms, and reinforced flooring to match your exact operational requirements..`
   },
   {
     title: "Defense & Specialty Vehicles",
-    video: "assets/ComponentManufacturing.mp4",
+    video: "assets/defense.jpg",
     desc: `Our defense and specialty vehicle bodies are engineered to meet the stringent standards of government and emergency services. We develop mission-ready solutions for the defense sector, disaster management units, and specialized agencies. These vehicles are designed for rugged terrain, enhanced security, and functional adaptability—providing reliable performance in critical situations.
 
 `
